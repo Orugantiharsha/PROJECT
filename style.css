@@ -1,0 +1,77 @@
+
+  ul
+  {
+    display: flex;
+  }
+  .navbar
+  {
+    font-size: 5px;
+    padding: 2px; 
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: -500px;
+  }
+  .container {
+    background-color:rgba(0, 255, 255, 0);
+    width: 500px;
+    height: 580px;
+    margin: -3px auto;
+    padding: 20px;
+    border: solid greenyellow 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(16, 16, 16, 0.975);
+    backdrop-filter: blur(5px); 
+  }
+  /* Styles for tablets and iPads */
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 40%;
+      height: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      font-size: 12px;
+      width: 0;
+    }
+  
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+
+  
+  /* Styles for smartwatches */
+  @media only screen and (max-width: 320px) {
+    .container {
+      width: 95%;
+    }
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    border: 2px solid #cccccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    margin-left: -2px;
+  }
+  label{
+    color:white;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  
